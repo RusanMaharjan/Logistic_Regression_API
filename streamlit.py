@@ -28,6 +28,6 @@ if st.button("Predict Employee Termination or Active"):
             else:
                 st.success("Employee is likely to be active!!")
         else:
-            st.warninig("API ERROR!!")
+            st.warning("API ERROR!!")
     except requests.exceptions.RequestException:
         st.error("Could not connect to API.")
